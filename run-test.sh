@@ -11,6 +11,7 @@ then
    if [ "$remove" == "y" ] || [ "$remove" == "Y" ]
    then
       rm "$FILE"
+      echo "Previous data file removed!"
    fi
 fi
 
