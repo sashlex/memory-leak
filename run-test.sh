@@ -3,6 +3,7 @@
 set -e # stop script at least one test fail
 
 FILE=./data.json
+COUNT=1000
 
 if [ -f "$FILE" ]
 then
@@ -13,7 +14,8 @@ then
    fi
 fi
 
-for i in {1..1000}; do
+for i in $(seq 1 $COUNT); do
    echo "Count: $i"
    npm run test
+   echo
 done
