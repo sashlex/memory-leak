@@ -14,5 +14,6 @@ then
 fi
 
 for i in {1..1000}; do
+   echo "Count: $i"
    npm run test
 done
