@@ -10,5 +10,6 @@
   - Set number of runs in run-test.sh, $COUNT parameter;
   - chmod +x ./run-test.sh
   - ./run-test.sh
+  - Ctrl + c - stop test;
 
-- **Check memory usage on:** http://localhost:300/memory-usage
+- **After tests (to avoid increase memory usage), check memory usage on:** http://localhost:300/memory-usage
