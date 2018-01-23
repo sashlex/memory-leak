@@ -1,0 +1,29 @@
+{
+  "name": "memory-leak",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sashlex",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "chart.js": "^2.7.1",
+    "express": "^4.16.2"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "ava": {
+    "files": [
+      "./test/**/*.test.js",
+      "!*.js"
+    ],
+    "serial": false,
+    "verbose": false,
+    "timeout": "30s",
+    "failFast": true
+  }
+}
