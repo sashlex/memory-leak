@@ -1,26 +1,12 @@
 {
-  "name": "memory-leak",
+  "name": "memory-leak-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "author": "sashlex",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.17.1",
     "chart.js": "^2.7.1",
     "express": "^4.16.2"
-  },
-  "scripts": {
-    "test": "ava"
-  },
-  "ava": {
-    "files": [
-      "./test/**/*.test.js",
-      "!*.js"
-    ],
-    "serial": false,
-    "verbose": false,
-    "timeout": "30s",
-    "failFast": true
   }
 }

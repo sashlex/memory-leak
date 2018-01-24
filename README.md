@@ -1,15 +1,17 @@
-#### Empty express project memory leak test:
-*( memory slow growing )*
+#### Boilerplate for memory leak test, for express.js project development:
+- **Add any node library for testing in code:**
+  - Edit file "index.js", add your test code in "/test" route, for stress test;
+
+- **Install "ab" utility, for ubuntu:**
+  - sudo apt-get install apache2-utils
 
 - **Run project:**
-  - *For check with http://localhost:300/memory-usage:* node --stack_trace_limit=0 --max_old_space_size=10 --optimize_for_size --always_compact index.js
-  - *For chrome dev tools:* node --inspect --stack_trace_limit=0 --max_old_space_size=10 --optimize_for_size --always_compact index.js
+  - node index.js
 
-- **Optional run:** htop -p 1234
-- **Start tests:**
-  - Set number of runs in run-test.sh, $COUNT parameter;
-  - chmod +x ./run-test.sh
-  - ./run-test.sh
-  - Ctrl + c - stop test if need;
+- **Optional run process monitor:** htop -p &lt;Process ID&gt;
+- **Start test:**
+  - ab -n 10000 -c 100 http://localhost:3000/test
 
-- **After tests (to avoid increase memory usage), check memory usage on:** http://localhost:300/memory-usage
+- **After test (to avoid increase memory usage), check memory usage on page:** http://localhost:3000/memory-usage
+
+- **Remove data file for next testing:** ./data.dat
