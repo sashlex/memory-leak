@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "author": "sashlex",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "chart.js": "^2.7.2",
     "express": "^4.16.3"
